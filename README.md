@@ -3,19 +3,19 @@ The application generates an AI image based on the user prompt entered. To gener
 
 
 Go to the folder where you want to store your project, and clone the new repository:
-...
+```
 git clone https://github.com/rmotyl/AIImageGenerator.git
-...
+```
 
 Install dependencies:
-...
+```
 npm install
-...
+```
 
 Run application locally:
-...
+```
 npm run dev
-...
+```
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
