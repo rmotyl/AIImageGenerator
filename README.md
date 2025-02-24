@@ -1,4 +1,21 @@
-# React + Vite
+# React + Vite AI Image Generator App
+The application generates an AI image based on the user prompt entered. To generate new images, the application uses the https://www.edenai.co/ service, mainly this API endpoint: https://api.edenai.run/v2/image/generation 
+
+
+Go to the folder where you want to store your project, and clone the new repository:
+...
+git clone https://github.com/rmotyl/AIImageGenerator.git
+...
+
+Install dependencies:
+...
+npm install
+...
+
+Run application locally:
+...
+npm run dev
+...
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
