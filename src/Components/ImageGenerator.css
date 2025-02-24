@@ -1,0 +1,110 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(30, 41, 53);
+    color: white;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-box {
+    position: relative;
+    z-index: -1;
+}
+
+.image-box img{
+    width: 512px;
+    height: 512px;
+}
+
+.loading-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-box-active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loading-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: auto;
+    border: 5px solid violet;
+    border-top: 6px solid white;
+    animation: spin 1s linear;
+    animation-iteration-count: 1000;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+.prompt-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(43, 59, 75);
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.prompt-box input {
+    width: 70%;
+    background-color: inherit;
+    outline: none;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.prompt-box input::placeholder {
+    color: rgb(185, 184, 184);
+}
+
+.prompt-box button {
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(71, 119, 222);
+    border-radius: 40px;
+    padding: 10px 30px;
+}
+
+.prompt-box button {
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(71, 119, 222);
+    border-radius: 40px;
+    padding: 10px 30px;
+    transition: box-shadow 0.5s;
+}
+
+.prompt-box button:hover {
+    box-shadow: 0px 0px 20px 5px rgb(71, 119, 222);
+}
